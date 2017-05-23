@@ -61,11 +61,6 @@ function aic_register_menu_page() {
 	$menu_slug = 'aic_tools_menu';
 
 	add_menu_page(__( 'AIC Tools' ), __( 'AIC Tools' ), $capability, $menu_slug, 'aic_tools_settings', '', 2);
-	/*add_submenu_page($menu_slug, __('Post Type','aimbir'), __('Post Type','aimbir') ,$capability, "post_type_options", 'aic_tools_post_type_page');
-	add_submenu_page($menu_slug, __('Taxonomy','aimbir'), __('Taxonomy','aimbir') ,$capability, "taxonomy_options", 'aic_tools_taxonomy_page');
-	add_submenu_page($menu_slug, __('Widgets','aimbir'), __('Widgets','aimbir') ,$capability, "widget_options", 'aic_tools_widget_page');
-
-	unset($GLOBALS['submenu'][$menu_slug][0]);*/
 }
 add_action( 'admin_menu', 'aic_register_menu_page' );
 
