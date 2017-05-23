@@ -41,4 +41,18 @@ jQuery( document ).ready( function( $ ){
 	/* Edit Data */
 
 	/* Delete Data */
+	$(".delete-post-type").click(function()
+	{
+		var id = $(this).attr("id");
+		var del_id = id;
+		var parent = $(this).parent("td").parent("tr");
+		if(confirm('Sure to Delete user post type ID no = ' +del_id+'?'))
+		{
+			$.post(main.plugin_address + 'templates/delete/post_type_delete.php', {'del_id':del_id}, function(data)
+			{
+				parent.fadeOut('slow');
+			});
+		}
+		return false;
+	});
 });

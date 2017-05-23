@@ -50,12 +50,12 @@ function aic_tools_settings(){
 											<td><?php echo $post_type->slug; ?></td>
 											<td><?php echo date("Y-m-d H:i:s", $post_type->date_made); ?></td>
 											<td>
-												<a id="<?php echo $post_type->id; ?>" class="edit-link" href="#" title="Edit">
+												<a id="<?php echo $post_type->id; ?>" class="edit-post-type" href="#" title="Edit">
 													<img src="<?php echo get_aic_plugin_address(); ?>assets/images/edit.png" width="20px" />
 												</a>
 											</td>
 											<td>
-												<a id="<?php echo $post_type->id; ?>" class="delete-link" href="#" title="Delete">
+												<a id="<?php echo $post_type->id; ?>" class="delete-post-type" href="#" title="Delete">
 													<img src="<?php echo get_aic_plugin_address(); ?>assets/images/delete.png" width="20px" />
 												</a>
 											</td>
